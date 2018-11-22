@@ -1,5 +1,5 @@
 # nelsonseccofilho.hol.es | Fullstack Design
-A lightweight foundation for your next webpack based frontend project.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eaque animi quo saepe suscipit repellendus, quae impedit illum velit enim quisquam debitis eum sequi harum sapiente officia. Saepe, ea cum.
 
 
 ### Installation
