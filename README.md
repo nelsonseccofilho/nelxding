@@ -11,6 +11,10 @@ https://yarnpkg.com/en/docs/install
 ### Instalação
 
 ```
+cd ~/nelxding/
+```
+
+```
 npm install ou yarn install
 ```
 
