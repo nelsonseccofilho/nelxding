@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Front-end skills test.",
   "scripts": {
-    "build": "webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "prod": "webpack --config webpack/webpack.config.prod.js  --colors",
+    "dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,9 @@
     "css-loader": "^1.0.0",
     "eslint": "^5.7.0",
     "eslint-loader": "^2.1.1",
+    "expose-loader": "^0.7.5",
     "file-loader": "^2.0.0",
+    "group-css-media-queries-loader": "^3.0.2",
     "html-webpack-plugin": "^4.0.0-beta.2",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
@@ -46,6 +48,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0"
+    "@babel/polyfill": "^7.0.0",
+    "jquery": "^3.3.1"
   }
 }

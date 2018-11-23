@@ -1,5 +1,167 @@
-$body-color: blue;
+#main-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(100, 0, 0, 0.7);
+  width: 5vw;
+  z-index: 4;
+  margin: 0;
+  padding: 0;
 
-body {
-  color: $body-color;
+  transition: all 0.4s ease-in-out;
+
+  .onepage-pagination {
+    top: auto;
+    left: 0;
+    bottom: 30%;
+    li{
+      a::before{
+        color: transparent;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgba(100, 0, 0, 0.9);
+    width: 7vw;
+
+    .onepage-pagination {
+      li {
+        a::before {
+          line-height: 12px;
+          color: red;
+        }
+        &:nth-child(1) {
+          a::before {
+            content: "123";
+          }
+        }
+        &:nth-child(2) {
+          a::before {
+            content: "223";
+          }
+        }
+        &:nth-child(3) {
+          a::before {
+            content: "323";
+          }
+        }
+        &:nth-child(4) {
+          a::before {
+            content: "423";
+          }
+        }
+        &:nth-child(5) {
+          a::before {
+            content: "523";
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  section {
+    background: no-repeat center center transparent;
+    background-size: cover !important;
+    article {
+      border-bottom: 0.5px solid #333;
+      height: 100vh;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      padding: 2em;
+
+      &.ilustration {
+        background-size: 70%;
+      }
+      .inner {
+        flex: 1 1 50%;
+        padding: 1em;
+        .img-banner {
+          background: url("../images/bg/txa-3268@3x.png") 0 0 no-repeat
+            transparent;
+          width: 33%;
+          min-height: 220px;
+        }
+      }
+    }
+  }
+}
+
+p {
+  color: #fff;
+  font-size: 22px;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+section:nth-child(1) {
+  background-image: url("../images/bg/total@3x.png");
+  article {
+    background: url("http://localhost:5000/images/[1]-src/images/ilustrations/yellow-ilustration@3x.png?67efbb6b955dbe2b25b1e284a3cbedc5") -160px -460px
+      no-repeat transparent;
+    .inner {
+      display: flex;
+      flex-flow: column nowrap;
+      align-content: center;
+      align-items: center;
+    }
+  }
+}
+
+section:nth-child(2) {
+  background-image: url("../images/bg/bg@3x.png");
+}
+
+section:nth-child(3) {
+  background-image: url("../images/bg/foto@3x.png");
+}
+
+section:nth-child(4) {
+  background-image: url("../images/bg/img@3x.png");
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    section {
+      article {
+        flex-direction: column !important;
+        .inner {
+          width: 100vw;
+          .img-banner {
+            background-image: url("../images/bg/txa-3268.png");
+          }
+        }
+      }
+    }
+  }
+  p {
+    color: blue;
+  }
+  section:nth-child(1) {
+    background: url("../images/bg/total.png") center center no-repeat
+      transparent;
+  }
+  section:nth-child(2) {
+    background-image: url("../images/bg/bg.png");
+  }
+  section:nth-child(3) {
+    background-image: url("../images/bg/foto.png");
+  }
+  section:nth-child(4) {
+    background-image: url("../images/bg/img.png");
+  }
+  section:nth-child(5) {
+    article {
+      flex-direction: column-reverse !important;
+    }
+  }
 }
