@@ -85,7 +85,7 @@
         flex: 1 1 50%;
         padding: 1em;
         .img-banner {
-          background: url("../images/bg/txa-3268@3x.png") 0 0 no-repeat
+          background: url("../images/bg/txa-3268@3x-min.png") 0 0 no-repeat
             transparent;
           width: 33%;
           min-height: 220px;
@@ -104,9 +104,9 @@ p {
 }
 
 section:nth-child(1) {
-  background-image: url("../images/bg/total@3x.png");
+  background-image: url("../images/bg/total@3x-min.png");
   article {
-    background: url("http://localhost:5000/images/[1]-src/images/ilustrations/yellow-ilustration@3x.png?67efbb6b955dbe2b25b1e284a3cbedc5") -160px -460px
+    background: url("http://localhost:5000/images/[1]-src/images/ilustrations/yellow-ilustration@3x-min.png?67efbb6b955dbe2b25b1e284a3cbedc5") -160px -460px
       no-repeat transparent;
     .inner {
       display: flex;
@@ -118,15 +118,15 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  background-image: url("../images/bg/bg@3x.png");
+  background-image: url("../images/bg/bg@3x-min.png");
 }
 
 section:nth-child(3) {
-  background-image: url("../images/bg/foto@3x.png");
+  background-image: url("../images/bg/foto@3x-min.png");
 }
 
 section:nth-child(4) {
-  background-image: url("../images/bg/img@3x.png");
+  background-image: url("../images/bg/img@3x-min.png");
 }
 
 @media screen and (max-width: 768px) {
@@ -137,7 +137,7 @@ section:nth-child(4) {
         .inner {
           width: 100vw;
           .img-banner {
-            background-image: url("../images/bg/txa-3268.png");
+            background-image: url("../images/bg/txa-3268-min.png");
           }
         }
       }
@@ -147,17 +147,17 @@ section:nth-child(4) {
     color: blue;
   }
   section:nth-child(1) {
-    background: url("../images/bg/total.png") center center no-repeat
+    background: url("../images/bg/total-min.png") center center no-repeat
       transparent;
   }
   section:nth-child(2) {
-    background-image: url("../images/bg/bg.png");
+    background-image: url("../images/bg/bg-min.png");
   }
   section:nth-child(3) {
-    background-image: url("../images/bg/foto.png");
+    background-image: url("../images/bg/foto-min.png");
   }
   section:nth-child(4) {
-    background-image: url("../images/bg/img.png");
+    background-image: url("../images/bg/img-min.png");
   }
   section:nth-child(5) {
     article {
