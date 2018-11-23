@@ -5,7 +5,104 @@ Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
 
-html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html {
+  color: #000;
+  background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
 
 //colors
 $dark-brown: #43231c;
@@ -96,45 +193,6 @@ $white: #fff;
 
 * {
   transition: all 0.4s ease-in-out;
-}
-
-//tipography
-h1, h2, h3, p{
-  text-shadow: 1.8px 3px 2.5px rgba(0, 0, 0, 0.31);
-  margin: 0;
-}
-
-
-.ilustration{
-  h1 {
-    color: $yellow;
-    color: #ffce3f;
-    font-family: "brandongrotesque-bold", Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 90px;
-    letter-spacing: -3.5px;
-  }
-  span{
-    font-family: "aaux_prolightregular", Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    height: 30px;
-    text-shadow: 1.8px 3px 2.5px rgba(0, 0, 0, 0.31);
-    color: $white;
-    strong{
-      color: $yellow;
-      font-family: "brandongrotesque-bold", Arial, Helvetica, sans-serif;
-      letter-spacing: -1.5px;
-    }
-  }
-}
-
-span,
-p {
-  color: deepskyblue;
-  font-size: 22px;
-  line-height: 2;
-  font-family: "aaux_probold_italicregular", Helvetica, sans-serif;
-  font-weight: bold;
 }
 
 #main-menu {
@@ -401,25 +459,90 @@ p {
   }
 }
 
+//tipography
+h1,
+h2,
+h3,
+p {
+  font-family: "aaux_prolightregular", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-shadow: 1.8px 3px 2.5px rgba(0, 0, 0, 0.31);
+  margin: 0 0 1em 0;
+}
+
 section:nth-child(1) {
   background-image: url("../images/bg/total@3x-min.png");
   article {
     background: url("../images/ilustrations/yellow-ilustration@3x-min.png") -160px -460px
       no-repeat transparent;
-      .inner {
-        display: flex;
-        flex-flow: column nowrap;
-        margin: -10% 0 0 30%;      
+    .inner {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: -10% 0 0 30%;
+      h1 {
+        color: $yellow;
+        font-family: "brandongrotesque-bold", Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 90px;
+        letter-spacing: -3.5px;
+        margin-bottom: .25em;
+      }
+      span {
+        font-family: "aaux_prolightregular", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        height: 30px;
+        text-shadow: 1.8px 3px 2.5px rgba(0, 0, 0, 0.31);
+        color: $white;
+        strong {
+          color: $yellow;
+          font-family: "brandongrotesque-bold", Arial, Helvetica, sans-serif;
+          letter-spacing: -1.5px;
+        }
+      }
     }
   }
 }
 
 section:nth-child(2) {
   background-image: url("../images/bg/bg@3x-min.png");
+  article {
+    .inner {
+      h2 {
+        color: $yellow;
+        font-family: "brandongrotesque-bold", Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        letter-spacing: -1.5px;
+      }
+      p {
+        color: $white !important;
+      }
+      &:nth-child(1) {
+        padding-left: 20vw;
+      }
+    }
+  }
 }
 
 section:nth-child(3) {
   background-image: url("../images/bg/foto@3x-min.png");
+  article {
+    align-items: flex-start;
+    padding: 65px 15vw 0 30vw;
+    .inner {
+      h2 {
+        font-family: 'brandongrotesque-medium', Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        text-align: center;
+        color: $white;
+      }
+      p{
+        font-family: 'aaux_prolightregular', Arial, Helvetica, sans-serif;
+        color: $white;
+      }
+    }
+  }
 }
 
 section:nth-child(4) {
