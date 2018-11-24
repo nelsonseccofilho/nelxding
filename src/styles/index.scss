@@ -152,7 +152,7 @@ $white: #fff;
 }
 
 @font-face {
-  font-family: "aaux_proregularregular";
+  font-family: "aaux_pro_medium";
   src: url("../fonts/aaux_pro_medium-webfont.woff2") format("woff2"),
     url("../fonts/aaux_pro_medium-webfont.woff") format("woff");
   font-weight: normal;
@@ -319,7 +319,7 @@ $white: #fff;
     .social-list {
       top: 0;
       position: absolute;
-      left: 20px;
+      left: 60px;
       width: 80px;
       opacity: 0;
 
@@ -431,6 +431,7 @@ $white: #fff;
   section {
     background: no-repeat center center transparent;
     background-size: cover !important;
+    overflow: hidden;
     article {
       border-bottom: 0.5px solid #333;
       height: 100vh;
@@ -440,7 +441,7 @@ $white: #fff;
       justify-content: flex-start;
       align-items: center;
       align-content: center;
-      padding: 2em;
+      padding: 2em 2em 2em 2em;
 
       &.ilustration {
         background-size: 70%;
@@ -547,6 +548,12 @@ section:nth-child(3) {
 
 section:nth-child(4) {
   background-image: url("../images/bg/img@3x-min.png");
+  .legend{
+    background-color: #fff;
+    font-family: 'aaux_pro_medium', Arial, Helvetica, sans-serif;
+    padding: .5em 5vw .5em 5vw;
+    margin: 40vw 0 0 10vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
